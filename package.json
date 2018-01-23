@@ -1,0 +1,16 @@
+{
+  "name": "asana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "Jozef Woroniecki",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "sass": "^1.0.0-beta.4"
+  }
+}

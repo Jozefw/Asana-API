@@ -1,0 +1,33 @@
+.header{
+    &__title{
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin: 3rem auto;
+        background-image: -webkit-gradient(linear, left top, right top, from($color-primary), to($color-secondary));
+        background-image: linear-gradient(to right, $color-primary, $color-secondary);
+        color: transparent;
+        letter-spacing: .2rem;
+        -webkit-background-clip: text;
+        
+
+    }
+
+    &__button{
+        background-color: $color-secondary;
+        color:$color-white;
+        padding: 1.5rem 2rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+        display: block;
+        margin: 3rem auto;
+        opacity: 1;
+        transition: all .5s ease-in-out;
+        
+        &:hover{
+            opacity: .8;
+            transform: scale(1.2);
+        }
+    }
+}
