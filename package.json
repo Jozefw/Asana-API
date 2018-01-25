@@ -1,7 +1,6 @@
 {
-  "name": "asana",
+  "name": "asanaTest",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "watch:sass": "node-sass scss/main.scss css/style.css -w"
@@ -9,8 +8,23 @@
   "author": "Jozef Woroniecki",
   "license": "ISC",
   "devDependencies": {
+    "asana": "^0.15.0",
+    "browser-require": "^0.1.6",
+    "browserfy": "^1.0.0",
+    "browserify": "^15.2.0",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
+    "require": "^2.4.20",
     "sass": "^1.0.0-beta.4"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jozefw/Asana-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jozefw/Asana-API/issues"
+  },
+  "homepage": "https://github.com/Jozefw/Asana-API#readme",
+  "description": ""
 }

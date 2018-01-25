@@ -2,7 +2,13 @@
  class API_Request {
     // Make an HTTP GET Request 
     async get(url) {
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        mode : 'no-cors',
+        method: 'GET',
+        headers : {
+          'Access-Control-Allow-Origin' : '*'
+        }
+      });
       const resData = await response.json();
       return resData;
     }
@@ -11,7 +17,9 @@
     async post(url, data) {
       const response = await fetch(url, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
+          'Access-Control-Allow-Origin' : '*',
           'Content-type': 'application/json'
         },
         body: JSON.stringify(data)
@@ -26,6 +34,7 @@
      async put(url, data) {
       const response = await fetch(url, {
         method: 'PUT',
+        mode: 'no-cors',
         headers: {
           'Content-type': 'application/json'
         },
@@ -40,6 +49,7 @@
     async delete(url) {
       const response = await fetch(url, {
         method: 'DELETE',
+        mode: 'no-cors',
         headers: {
           'Content-type': 'application/json'
         }

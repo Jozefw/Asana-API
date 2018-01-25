@@ -12,9 +12,9 @@ data1 = {
 data = "hello";
 
 
-function asanaConnect(){
-    asana.post('"https://app.asana.com/-/oauth_authorize?client_id=530466292080217&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&state=<STATE_PARAM"', data)
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+function asanaConnect() {
+    asana.get("https://app.asana.com/-/oauth_authorize?client_id=530466292080217&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&state=<STATE_PARAM")
+  .then(data => console.log(data));
+  //.catch(err => console.log(err));
 
 }
